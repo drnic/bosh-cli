@@ -48,8 +48,9 @@ type BoshOpts struct {
 	AliasEnv     AliasEnvOpts     `command:"alias-env"                 description:"Alias environment to save URL and CA certificate"`
 
 	// Authentication
-	LogIn  LogInOpts  `command:"log-in"  alias:"l" alias:"login"  description:"Log in"`
-	LogOut LogOutOpts `command:"log-out"           alias:"logout" description:"Log out"`
+	LogIn      LogInOpts      `command:"log-in"  alias:"l" alias:"login"  description:"Log in"`
+	LogOut     LogOutOpts     `command:"log-out"           alias:"logout" description:"Log out"`
+	OAuthToken OAuthTokenOpts `command:"oauth-token" description:"Retrieve and display the OAuth token for the current session"`
 
 	// Tasks
 	Task       TaskOpts       `command:"task"        alias:"t"  description:"Show task status and start tracking its output"`
@@ -227,6 +228,10 @@ type LogInOpts struct {
 }
 
 type LogOutOpts struct {
+	cmd
+}
+
+type OAuthTokenOpts struct {
 	cmd
 }
 

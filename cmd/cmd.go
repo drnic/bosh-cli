@@ -111,6 +111,12 @@ func (c Cmd) Execute() (cmdErr error) {
 		sess := NewSessionFromOpts(c.BoshOpts, config, deps.UI, true, true, deps.FS, deps.Logger)
 		return NewLogOutCmd(sess.Environment(), config, deps.UI).Run()
 
+	case *OAuthTokenOpts:
+		sessionFactory := func(config cmdconf.Config) Session {
+			return NewSessionFromOpts(c.BoshOpts, config, deps.UI, true, true, deps.FS, deps.Logger)
+		}
+		return NewOAuthTokenCmd(sessionFactory, c.config(), deps.UI).Run()
+
 	case *TaskOpts:
 		eventsTaskReporter := boshuit.NewReporter(deps.UI, true)
 		plainTaskReporter := boshuit.NewReporter(deps.UI, false)
