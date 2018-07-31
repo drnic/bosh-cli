@@ -83,12 +83,13 @@
   revision = "7dc373669fa10ddf827c37c595dee30a2f001be9"
 
 [[projects]]
+  branch = "master"
   name = "github.com/cheggaaa/pb"
   packages = ["."]
   revision = "2af8bbdea9e99e83b3ac400d8f6b6d1b8cbbf338"
-  version = "v1.0.25"
 
 [[projects]]
+  branch = "master"
   name = "github.com/cloudfoundry/bosh-agent"
   packages = [
     "agentclient",
@@ -97,10 +98,10 @@
     "agentclient/http",
     "agentclient/http/mocks"
   ]
-  revision = "48f20b6d7befdf2767a66a0ec8c320fb385b9506"
-  version = "v2.124.0"
+  revision = "c2eed22dd09505b7bfac8980b3658a7becc254cf"
 
 [[projects]]
+  branch = "master"
   name = "github.com/cloudfoundry/bosh-davcli"
   packages = [
     "client",
@@ -108,7 +109,6 @@
     "config"
   ]
   revision = "9768c92c6afe01df434697ad7afff0153687751d"
-  version = "v0.0.30"
 
 [[projects]]
   name = "github.com/cloudfoundry/bosh-gcscli"
@@ -154,13 +154,14 @@
   revision = "081a897d1c82e1747d24bb34215bb8011cbbd071"
 
 [[projects]]
+  branch = "x509-organization-0-0-124"
   name = "github.com/cloudfoundry/config-server"
   packages = [
     "types",
     "types/typesfakes"
   ]
-  revision = "d29aa99b7c301778efea4714252b6ef549089d6b"
-  version = "v0.0.124"
+  revision = "77e0cf7ab7c6595f0905d6b11808a444f629cbfb"
+  source = "https://github.com/drnic/config-server"
 
 [[projects]]
   branch = "master"
@@ -563,6 +564,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "a27dd163ab54ef9b45c0986ffe66f34b31ff711138a204a31270bd4e09c6078b"
+  inputs-digest = "f5cd9e4c19504b9288000dbd3e07fbfb2f7a209f470f92d0f104857c7c949f62"
   solver-name = "gps-cdcl"
   solver-version = 1

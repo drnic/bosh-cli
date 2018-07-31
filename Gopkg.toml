@@ -33,3 +33,8 @@ required = ["github.com/onsi/ginkgo/ginkgo", "github.com/maxbrunsfeld/counterfei
 [[constraint]]
   name = "github.com/cheggaaa/pb"
   branch = "master"
+
+[[constraint]]
+  name = "github.com/cloudfoundry/config-server"
+  branch = "x509-organization-0-0-124"
+  source = "https://github.com/drnic/config-server"
